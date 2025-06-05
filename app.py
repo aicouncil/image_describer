@@ -3,7 +3,7 @@ from PIL import Image
 import google.generativeai as genai
 import io
 
-genai.configure("GENAI_API_KEY")
+genai.configure(api_key="GENAI_API_KEY")
 
 #Streamli UI
 st.set_page_config(page_title="Image Description with Gemini")
