@@ -2,8 +2,10 @@ import streamlit as st
 from PIL import Image
 import google.generativeai as genai
 import io
+import os
 
-genai.configure(api_key="GENAI_API_KEY")
+api_key = os.getenv("GENAI_API_KEY")
+genai.configure(api_key=api_key)
 
 #Streamli UI
 st.set_page_config(page_title="Image Description with Gemini")
